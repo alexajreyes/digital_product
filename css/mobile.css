@@ -1,0 +1,40 @@
+@media screen and (max-width: 680px){
+    .products{
+        display: inherit;
+        height: auto;
+    }
+    .product{
+        margin-top: auto;
+    }
+    .main-section{
+        padding: 4%;
+    }
+    .feature{
+        display: inherit;
+        padding: 20%;
+
+    }
+    .mentions{
+        display: flex;
+        flex-direction: column;
+    }
+    .content-feature{
+        display: contents;
+    }
+    .content-mention{
+      padding: 20px;
+      width: 90%;
+    
+      
+    }
+    .row{
+        display: flex;
+        padding: 0 50px;
+        flex-direction: column;
+    }
+    .col-4, .col-8{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

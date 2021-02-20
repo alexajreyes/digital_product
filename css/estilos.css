@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root{
+    --green-color: #7acc2d;
+    --white-color: white;
+    --black-color: #c1bcbc;
+    /*Espaciodo*/
+    --space: 10px;
+    --box:0px 3px 6px #00000029;
+    --normal: 12px;
+}
+/*Variables*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 12px;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+label, p{
+    font-size: normal;
+}
+nav{
+    display: flex;
+    background-color: var(--green-color) ;
+    color: var(--white-color);
+    padding: var(--space);
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    padding-left: 20px;
+    list-style: none;
+}
+nav li a{
+    color:black;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: var(--white-color);
+}
+.main_section{
+    padding: 15px;
+    text-align: center;
+}
+.products{
+    background-image: url("../images/curve.png");
+    height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 25%;
+    display: flex;
+}
+.product{
+    padding: var(--space);
+    margin-top: -240px;
+}
+.products .content{
+    padding: 20px;
+    padding: 15px;
+    box-shadow: var(--box);
+}
+.img_content{
+    text-align: center;
+}
+.main_button{
+    background-color: var(--green-color) ;
+    width: 100%;
+    font-size: 12px;
+    color: var(--white-color);
+    border: 0;
+    padding: var(--space);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.main_button:hover{
+    background-color: #5e9e22;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-feature{
+  /*  box-shadow: var(--box);*/
+    text-align: center;
+    margin: 10px;
+    width: 20%;
+}
+.img-feature img{
+    width: 100px;
+    height: 150px;
+}
+.title-mentions{
+    text-align: center;
+    padding: var(--space);
+}
+.content-mention{
+    width: 20%;
+    background: #dfdfd5;
+    
+    text-align: center;
+}
+.img-mentions img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+.mentions{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin: 10px 15px;
+}
+footer{
+    background: #313337;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+/*formulario venta*/
+.modulo_pago{
+    background-color:  var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+.container{
+    max-width: 900px;
+    margin:auto;
+    height: 76%;
+    display: flex;
+    align-items: center;
+   
+  }
+  .modulo_pago_image{
+      max-width: 150px;
+      text-align: center;
+      margin: auto;
+      width: 100%;
+  }
+  .data{
+      margin-top: var(--space);
+      width: 100%;
+      height: 35px;
+      border-radius: 2px;
+      border: 1px solid var(--black-color);
+      box-sizing: border-box;
+  }
+  .row{
+    display: grid;
+    grid-template-areas: ". colum1 colum2 .";
+    grid-template-columns: 20% 1fr  1fr 20%;
+    align-items: center
+  }
+  .col-4{
+      grid-area: colum1;
+  }
+  .col-8{
+      grid-area: colum2;
+  }
+  .modulo_pago .main_button{
+      margin-top: var(--space);
+  }
